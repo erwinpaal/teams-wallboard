@@ -1,5 +1,5 @@
-# teams-wallboard
-This is a basic wallboard for Call Queues in Microsoft Teams. Unfortunately Microsoft doesn't provide wallboard functionality, so I've created it myself. At the moment, there are no real-time call queue statistics available via Microsoft Graph, but the most important information is available via PowerShell.
+# Microsoft Teams Wallboard
+This is a simple wallboard for call queues in Microsoft Teams. Unfortunately Microsoft doesn't provide wallboard functionality, so I've created it myself. At the moment, there are no real-time call queue statistics available via Microsoft Graph, but the most important information is available via PowerShell.
 
 ## How it works
 I run the `teams-wallboard-stats.ps1` PowerShell script as a scheduled task, which starts when the server starts. This script connects to Microsoft Teams using the `MicrosoftTeams` PowerShell module and executes a `Get-CsCallQueue` every 2 seconds in an infinite loop. It writes the statistics to a txt-file on the web server.
