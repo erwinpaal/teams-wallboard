@@ -1,0 +1,150 @@
+body {
+  background-color: #13265c;
+  color: white;
+  font-family: 'Courier New', monospace;
+}
+
+main {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 500px;
+}
+
+.title {
+  font-size: 50px;
+  line-height: 220px;
+  display: inline;
+}
+
+.medium {
+  font-size: 50px;
+  line-height: 100px;
+  display: inline;
+}
+
+.mediumBold {
+  font-size: 50px;
+  line-height: 100px;
+  display: inline;
+  font-weight: bold;
+}
+
+.large {
+  font-size: 80px;
+  line-height: 220px;
+  display: inline;
+}
+
+.largeBold {
+  font-size: 80px;
+  line-height: 220px;
+  display: inline;
+  font-weight: bold;
+}
+
+@media only screen and ((max-width: 1152px) or (max-height: 900px)) {
+  main {
+    left: 10%;
+    top: 10%;
+    transform: translate(0%, 0%);
+    white-space: normal;
+    text-align: left;
+  }
+  
+  .logo {
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 20px;
+    width: 300px;
+  }
+  
+  .title {
+    font-size: 40px;
+    line-height: 120px;
+  }
+  
+  .medium {
+    font-size: 40px;
+    line-height: 60px;
+    display: inline;
+  }
+
+  .mediumBold {
+    font-size: 40px;
+    line-height: 60px;
+    display: inline;
+    font-weight: bold;
+  }
+  
+  .large {
+    font-size: 40px;
+    line-height: 140px;
+    display: inline;
+  }
+
+  .largeBold {
+    font-size: 40px;
+    line-height: 140px;
+    display: inline;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  main {
+    left: 20px;
+    top: 20px;
+    transform: translate(0%, 0%);
+    white-space: normal;
+    text-align: left;
+  }
+  
+  .logo {
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 10px;
+    width: 200px;
+  }
+  
+  .title {
+    font-size: 30px;
+    line-height: 80px;
+  }
+  
+  .medium {
+    font-size: 30px;
+    line-height: 40px;
+    display: block;
+  }
+  
+  .mediumBold {
+    font-size: 30px;
+    line-height: 40px;
+    display: block;
+    font-weight: bold;
+  }
+  
+  .large {
+    font-size: 30px;
+    line-height: 40px;
+    display: block;
+  }
+
+  .largeBold {
+    font-size: 30px;
+    line-height: 40px;
+    display: block;
+    font-weight: bold;
+  }
+}
